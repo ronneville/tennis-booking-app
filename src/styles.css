@@ -1,0 +1,233 @@
+/* styles.css */
+
+/* Style the court when it's green */
+.court.green {
+      background-color: green;
+      color: white; /* Set text color to white or any desired color */
+      padding-left: 10px;
+      margin-top: 2px;
+      padding-top: 1px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    
+    /* Style the square elements when they're green */
+    .square.green {
+      background-color: green;
+      color: white; /* Set text color to white or any desired color */
+      padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+      margin-bottom: 2px;
+      margin-right: 15px;
+    
+      border-radius: 3px;
+      font-size: 18px; /* Set the font size to 18 pixels */
+    
+    }
+  
+    /* Style the court when it's orange */
+  .court.orange {
+      background-color: orange;
+      color: white; /* Set text color to white or any desired color */
+      padding-left: 10px;
+      margin-top: 2px;
+      padding-top: 1px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    
+    /* Style the square elements when they're green */
+    .square.orange {
+      background-color: orange;
+      font-size: 18px; /* Set the font size to 18 pixels */
+      color: white; /* Set text color to white or any desired color */
+      padding: 2px;
+      
+    }
+  
+    .app-container {
+      padding: 30px;
+      width: 500px;
+      border-radius: 10px;
+      outline: dashed 1px black;
+      margin: auto;
+      margin-top: 20px;
+   
+    } 
+  
+  
+    h1.court-title {
+      color: black; /* Set the text color to blue */
+      font-size: 34px; /* Set the font size to 34 pixels */
+      font-weight: bold; /* Set the font weight to bold */
+      margin-top: 2px;
+      /* Add any other CSS properties you'd like */
+    }
+  
+    h2.court-heading {
+      color: white; /* Set the text color to blue */
+      font-size: 24px; /* Set the font size to 24 pixels */
+      margin-bottom: 10px;
+      margin-top: 10px;
+      font-weight: bold; /* Set the font weight to bold */
+      /* Add any other CSS properties you'd like */
+    }
+ 
+  
+  /* Style the square elements when they're green */
+  .square.green {
+    background-color: green;
+    color: white; /* Set text color to white or any desired color */
+    padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+    margin-bottom: 2px;
+    margin-right: 15px;
+  
+    border-radius: 3px;
+    font-size: 18px; /* Set the font size to 18 pixels */
+  
+  }
+  
+  /* Style the court when it's orange */
+  .court.orange {
+    background-color: orange;
+    color: white; /* Set text color to white or any desired color */
+    padding-left: 10px;
+    margin-top: 2px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Style the square elements when they're green */
+  .square.orange {
+    background-color: orange;
+    font-size: 18px; /* Set the font size to 18 pixels */
+    color: white; /* Set text color to white or any desired color */
+    padding: 2px;
+    
+  }
+  
+  .app-container {
+    padding: 30px;
+    width: 500px;
+    border-radius: 10px;
+    outline: dashed .5px black;
+    margin: auto;
+    margin-top: 20px;
+  
+  } 
+  
+  
+  
+  h1.court-title {
+    color: black; /* Set the text color to blue */
+    font-size: 34px; /* Set the font size to 34 pixels */
+    font-weight: bold; /* Set the font weight to bold */
+    margin-top: 2px;
+    margin-bottom: 0;
+    /* Add any other CSS properties you'd like */
+  }
+  
+  h2.tennis-name {
+    color: rgb(133, 129, 129); /* Set the text color to blue */
+    font-size: 24px; /* Set the font size to 24 pixels */
+    font-weight: bold; /* Set the font weight to bold */
+    margin-top: 2px;
+    /* Add any other CSS properties you'd like */
+  }
+  
+  h3.court-heading {
+    color: white; /* Set the text color to blue */
+    font-size: 24px; /* Set the font size to 24 pixels */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-right: 10px;
+    font-weight: bold; /* Set the font weight to bold */
+    /* Add any other CSS properties you'd like */
+  }
+  
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .app-container {
+    position: relative;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .label {
+    display: flex;
+    align-items: center; /* Center labels vertically */
+  
+  }
+  
+  /* Adjusted styles for input fields */
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tick {
+    margin-left: 5px;
+  }
