@@ -10,6 +10,10 @@
       padding-bottom: 10px;
       margin-bottom: 10px;
       border-radius: 10px;
+      display: flex;
+      flex-direction: column; 
+      width: 300px;
+     
     }
     
     /* Style the square elements when they're green */
@@ -17,11 +21,9 @@
       background-color: green;
       color: white; /* Set text color to white or any desired color */
       padding-left: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+
       margin-bottom: 2px;
       margin-right: 15px;
-    
       border-radius: 3px;
       font-size: 18px; /* Set the font size to 18 pixels */
     
@@ -37,6 +39,13 @@
       padding-bottom: 10px;
       margin-bottom: 10px;
       border-radius: 10px;
+      display: flex;
+      flex-direction: column; 
+      width: 300px;
+  
+    
+
+  
     }
     
     /* Style the square elements when they're green */
@@ -47,16 +56,7 @@
       padding: 2px;
       
     }
-  
-    .app-container {
-      padding: 30px;
-      width: 500px;
-      border-radius: 10px;
-      outline: dashed 1px black;
-      margin: auto;
-      margin-top: 20px;
-   
-    } 
+
   
   
     h1.court-title {
@@ -78,52 +78,23 @@
  
   
   /* Style the square elements when they're green */
-  .square.green {
-    background-color: green;
-    color: white; /* Set text color to white or any desired color */
-    padding-left: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-    margin-bottom: 2px;
-    margin-right: 15px;
   
-    border-radius: 3px;
-    font-size: 18px; /* Set the font size to 18 pixels */
-  
-  }
-  
-  /* Style the court when it's orange */
-  .court.orange {
-    background-color: orange;
-    color: white; /* Set text color to white or any desired color */
-    padding-left: 10px;
-    margin-top: 2px;
-    padding-top: 1px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-  
-  /* Style the square elements when they're green */
-  .square.orange {
-    background-color: orange;
-    font-size: 18px; /* Set the font size to 18 pixels */
-    color: white; /* Set text color to white or any desired color */
-    padding: 2px;
-    
-  }
   
   .app-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
     padding: 30px;
-    width: 500px;
+    width: 700px;
     border-radius: 10px;
-    outline: dashed .5px black;
     margin: auto;
     margin-top: 20px;
   
   } 
   
-  
+  .calendar-section {
+    margin-right: 20px; /* Adjust margin as needed */
+  }
   
   h1.court-title {
     color: black; /* Set the text color to blue */
@@ -163,9 +134,7 @@
     margin-bottom: 10px;
   }
   
-  .app-container {
-    position: relative;
-  }
+ 
   
   .modal-overlay {
     position: fixed;
@@ -230,4 +199,22 @@
   
   .tick {
     margin-left: 5px;
+  }
+
+  .react-calendar {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as needed */
+  }
+  
+  .react-calendar__tile--active {
+    background-color: grey; /* Style for the selected date */
+  }
+  
+  .react-calendar__tile--now {
+    background-color: rgba(96, 101, 96, 0.228); /* Style for today's date */
+  }
+  
+  .react-calendar__tile--hasEvent {
+    font-weight: bold; /* Make days with events bold */
+  
   }
